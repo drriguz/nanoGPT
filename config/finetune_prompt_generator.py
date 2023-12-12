@@ -7,7 +7,7 @@ wandb_log = False # feel free to turn on
 wandb_project = 'prompt_generator'
 wandb_run_name = 'ft-' + str(time.time())
 
-dataset = 'prompt-generator'
+dataset = 'prompt_generator'
 init_from = 'gpt2-xl' # this is the largest GPT-2 model
 
 # only save checkpoints if the validation loss improves
