@@ -1,13 +1,13 @@
 import time
 
-out_dir = 'out-prompt-generator'
+out_dir = 'out-chuck-norris'
 eval_interval = 5
 eval_iters = 40
 wandb_log = False # feel free to turn on
-wandb_project = 'prompt_generator'
+wandb_project = 'chuck-norris'
 wandb_run_name = 'ft-' + str(time.time())
 
-dataset = 'prompt_generator'
+dataset = 'chucknorris'
 init_from = 'gpt2-medium' # this is the largest GPT-2 model
 
 # only save checkpoints if the validation loss improves

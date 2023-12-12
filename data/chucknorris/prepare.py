@@ -3,8 +3,16 @@ import requests
 import tiktoken
 import numpy as np
 
+# to fetch data, try:
+# for i in range(0, 1000):
+#     joke = requests.get('https://api.chucknorris.io/jokes/random').json()
+#     print(joke['value'])
+#     with open('input.txt', 'a') as f:
+#         f.write(joke['value'] + '\n')
+
+
 # download the tiny shakespeare dataset
-input_file_path = os.path.join(os.path.dirname(__file__), 'datasets_fka_awesome-chatgpt-prompts_raw_main_prompts.csv')
+input_file_path = os.path.join(os.path.dirname(__file__), 'chuck-norris.txt')
 
 with open(input_file_path, 'r') as f:
     data = f.read()
